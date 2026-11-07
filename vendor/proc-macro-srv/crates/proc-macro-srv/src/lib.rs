@@ -54,9 +54,9 @@ pub enum ProcMacroKind {
     Bang,
 }
 
-/// The `rustc --version` of the toolchain in `harness/toolchain` (nightly-2026-10-27, rust-lang/rust
-/// at 16d1ffac1), whose `proc_macro` this server is built over; upstream's build script asks rustc.
-pub const RUSTC_VERSION_STRING: &str = "rustc 1.101.0-nightly (16d1ffac1 2026-10-26)";
+/// The `rustc --version` of the toolchain in `harness/toolchain` (nightly-2026-11-07, rust-lang/rust
+/// at c980177d8), whose `proc_macro` this server is built over; upstream's build script asks rustc.
+pub const RUSTC_VERSION_STRING: &str = "rustc 1.101.0-nightly (c980177d8 2026-11-06)";
 
 pub struct ProcMacroSrv<'env> {
     expanders: Mutex<FxHashMap<Utf8PathBuf, Arc<dylib::Expander>>>,
